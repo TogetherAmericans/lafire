@@ -18,13 +18,35 @@
             padding: 20px 10px;
             text-align: center;
         }
-        .organization-banner {
-            background-color: #ffe4b3;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-            border-bottom: 3px solid #ff6b6b;
-        }
+        .flag-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.flag {
+    max-width: 300px;
+    height: auto;
+}
+
+.flag-left {
+    margin-right: 10px;
+}
+
+.flag-right {
+    margin-left: 10px;
+}
+
+.organization-banner {
+    text-align: center;
+    flex-grow: 1;
+    background-color: #ffe4b3;
+    color: #333;
+    padding: 10px;
+    border-bottom: 3px solid #ff6b6b;
+}
         .organization-banner h1 {
             font-size: 36px;
             margin: 0;
@@ -205,14 +227,20 @@
     </style>
 </head>
 <body>
-    <div class="organization-banner">
-        <h1>AMERICA WE ARE ONE</h1>
-        <p><strong>Mission:</strong> TOGETHER WE RISE AGAIN</p>
+    <div class="flag-banner">
+        <img src="flag2.webp" alt="American Flag Left" class="flag flag-left">
+        <div>
+            <div class="organization-banner">
+                <h1>AMERICA WE ARE ONE</h1>
+                <p><strong>Mission:</strong> TOGETHER WE RISE AGAIN</p>
+            </div>
+            <header>
+                <h1>Support Families Affected by the Los Angeles Fire</h1>
+                <p>Your generosity can help rebuild lives and bring hope to those in need.</p>
+            </header>
+        </div>
+        <img src="flag1.png" alt="American Flag Right" class="flag flag-right">
     </div>
-    <header>
-        <h1>Support Families Affected by the Los Angeles Fire</h1>
-        <p>Your generosity can help rebuild lives and bring hope to those in need.</p>
-    </header>
     <main>
         <section>
             <h2>How You Can Help</h2>
